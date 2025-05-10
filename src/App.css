@@ -1,5 +1,4 @@
-/* Tema escuro */
-
+/* Estilo geral para tema escuro */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
@@ -8,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* Container principal da aplicação */
 .app {
   max-width: 600px;
   margin: 40px auto;
@@ -17,11 +17,13 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 }
 
+/* Título */
 h1 {
   text-align: center;
-  color: #f5f6fa;
+  color: #4aa8ff;
 }
 
+/* Formulário de nova tarefa */
 .form {
   display: flex;
   gap: 10px;
@@ -34,14 +36,14 @@ h1 {
   flex: 1;
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #333;
+  border: 1px solid #444;
   background-color: #2f2f3f;
   color: #f5f6fa;
   font-size: 1rem;
 }
 
 .form input::placeholder {
-  color: #bbb;
+  color: #aaa;
 }
 
 .form button {
@@ -58,6 +60,7 @@ h1 {
   background-color: #0097e6;
 }
 
+/* Lista de tarefas */
 .lista {
   list-style: none;
   padding: 0;
@@ -73,18 +76,19 @@ h1 {
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease;
+  color: #f5f6fa;
 }
 
 .lista li.feita {
   background: #27ae60 !important;
   color: #fff;
   text-decoration: line-through;
-  opacity: 1;
 }
 
 .lista li input[type="checkbox"] {
   margin-right: 10px;
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .lista li span {
